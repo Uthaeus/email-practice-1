@@ -2,4 +2,37 @@
 .contact {
     min-height: calc(100vh - 80px);
     padding: 4rem 10%;
+
+    .contact-title {
+        width: max-content;
+        font-size: 3rem;
+        padding-right: 2rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid rgb(94, 34, 94);
+        margin-bottom: 3rem;
+        color: rgb(94, 34, 94);
+    }
+
+    .contact-form {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #f5f5f5;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+
+        input {
+            font-size: 1.2em;
+            color: #121212;
+
+            &::placeholder {
+                color: grey;
+                font-size: 1em;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
 }

@@ -13,7 +13,7 @@ export default function MainNavigation() {
             </div>
 
             <div className="main-navigation-right">
-                <NavLink to="/home" className={({ isActive }) => isActive ? "nav-link link-active" : "nav-link"}>Home</NavLink>
+                <NavLink to="/" className={({ isActive }) => isActive ? "nav-link link-active" : "nav-link"}>Home</NavLink>
                 <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link link-active" : "nav-link"}>Contact</NavLink>
             </div>
         </div>
