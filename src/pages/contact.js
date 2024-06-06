@@ -12,7 +12,7 @@ export default function Contact() {
             <h1 className="contact-title">Contact</h1>
 
             <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
-                <div className="row">
+                <div className="row mb-3">
                     <div className="col-6">
                         <input
                             type="text"
@@ -25,7 +25,7 @@ export default function Contact() {
                     </div>
                     <div className="col-6">
                         <input
-                            type="text"
+                            type="email"
                             placeholder="Email*"
                             className="form-control"
                             {...register("email", { required: true })}
@@ -36,7 +36,7 @@ export default function Contact() {
 
                 <textarea
                     placeholder="Message*"
-                    className="form-control"
+                    className="form-control mb-4"
                     rows="5"
                     {...register("message", { required: true })}
                 />
