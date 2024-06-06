@@ -1,5 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 
+import image from '../../assets/images/overtime_image1.jpg';
+
 export default function MainNavigation() {
 
     const navigate = useNavigate();
@@ -7,7 +9,7 @@ export default function MainNavigation() {
     return (
         <div className="main-navigation">
             <div className="main-navigation-left">
-                <p onClick={() => navigate("/")}>logo here</p>
+                <img src={image} alt="logo" onClick={() => navigate("/")} className="nav-logo" />
             </div>
 
             <div className="main-navigation-right">
